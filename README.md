@@ -10,4 +10,4 @@
 
 ## ДЗ
 
-- [Lesson 1](hw-lesson1/README.md)
+- [hw-lesson 1](hw-lesson1/README.md)
