@@ -10,6 +10,6 @@
 
 ## ДЗ
 
-- [hw-lesson 1](hw-lesson1\index.html)
+- [hw-lesson 1](hw-lesson1/index.html)
 
-* [hw-meeting 1](hw-meeting1\forms.html)
+* [hw-meeting 1](hw-meeting1/forms.html)
