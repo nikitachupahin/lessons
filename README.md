@@ -15,3 +15,5 @@
 * [hw-meeting 1](hw-meeting1/forms.html)
 
 * [hw-lesson 2](https://codepen.io/nikitachupahin/pen/eYBrPOg)
+
+* [hw-lesson 3](hw-lesson3/simple-layout.html)
