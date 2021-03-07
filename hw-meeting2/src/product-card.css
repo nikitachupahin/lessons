@@ -1,0 +1,92 @@
+body {
+  background: #e5e5e5;
+  margin-left: 50px;
+  margin-top: 50px;
+  font-family: "Roboto";
+  font-weight: normal;
+}
+.product-card {
+  background: #ffffff;
+  width: 200px;
+  height: 403px;
+  border: 1px solid #f3f3f3;
+  box-sizing: border-box;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+}
+.product-card:hover {
+  border: 1px solid #f3f3f3;
+  box-sizing: border-box;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.07);
+  border-radius: 5px;
+}
+.product-card__img {
+  margin: 30px 20px 45px;
+}
+.product-card__description {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  margin: 0 16px 6px 15px;
+}
+.product-card__code {
+  font-size: 11px;
+  line-height: 13px;
+  margin: 0 80px 15px 15px;
+}
+.product-card__grading {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 15px 21px 15px;
+}
+.product-card__rating {
+  border-radius: 0.5px;
+}
+.product-card__reviews {
+  font-size: 11px;
+  line-height: 13px;
+}
+.product-card__price {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 15px 20px 15px;
+}
+.product-card__price-name {
+  font-size: 11px;
+  line-height: 13px;
+}
+.product-card__cost {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+}
+.product-card__button {
+  text-align: center;
+  height: 100%;
+  background: #00acdc;
+  border-radius: 5px;
+  margin: 0 15px 10px;
+  padding-top: 10px;
+}
+.product-card__action {
+  font-size: 14px;
+  display: block;
+  line-height: 16px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #ffffff;
+  height: 100%;
+  text-decoration: none;
+}
+.product-card__button:hover {
+  background: #ffffff;
+  border: 1px solid #00acdc;
+}
+.product-card__button a:hover {
+  color: #00acdc;
+}
