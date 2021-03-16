@@ -1,0 +1,138 @@
+* {
+    box-sizing: border-box;
+}
+
+.block {
+    margin-bottom: 10px;
+}
+
+.block > div {
+    background: #00BCD4;
+    border: 1px solid #FFF;
+    height: 150px;
+    color: #FFF;
+    display: block;
+    width: 100%;
+}
+
+.inside {
+    position: relative;
+    height: 100%;
+    overflow: hidden;
+}
+
+.text {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+    z-index: 1;
+}
+.first {
+    display: flex;
+}
+.second {
+    display: flex;
+}
+.third {
+    display: flex;
+}
+.third .colored {
+    flex: 0 0 25%;
+}
+.fourth {
+    display: flex;
+}
+.fourth .colored:not(:last-child) {
+    
+    flex: 0 0 25%;
+}
+.fifth {
+    display: flex;
+}
+
+@media (max-width: 1200px) {
+    .first {
+        flex-wrap: wrap;
+    }
+    .first .colored {
+        flex: 0 0 50%;
+    }
+    .third {
+        flex-wrap: wrap;
+    }
+    .third .colored {
+        
+        flex: 0 0 100%;
+    }
+    .third .colored:not(:last-child) {
+        flex: 0 0 50%;
+    }
+    .fourth .colored.colored {
+        flex: 0 0 30%;
+    }
+    .fourth .colored:not(:nth-child(2)) {
+        flex: 0 0 35%;
+    }
+    .fifth {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .fifth .colored {
+        flex: 0 0 33%;
+        
+    }
+}
+@media (max-width: 960px) {
+    .third {
+        flex-wrap: nowrap;
+        
+    }
+    .third .colored.colored {
+        flex: 0 0 33.3%;
+    }
+    .fifth {
+        flex-wrap: wrap;
+        
+    }
+    .fifth .colored {
+        flex: 0 0 50%;
+        
+    }
+    .fifth .colored:last-child {
+        flex: 0 0 100%;
+    }
+}
+@media (max-width: 768px) {
+    .third {
+        flex-wrap: wrap;
+        
+    }
+    .third .colored.colored {
+        flex: 0 0 100%;
+    }
+    .third .colored:not(:first-child) {
+        flex: 0 0 50%;
+    }
+    .fourth {
+        flex-wrap: wrap;
+    }
+    .fourth .colored.colored {
+        flex: 0 0 50%;
+    }
+    .fourth .colored:last-child {
+        flex: 0 0 100%;
+    }
+}
+@media (max-width: 320px) {
+    .third .colored.colored {
+        flex: 0 0 100%;
+    }
+    .fourth .colored.colored {
+        flex: 0 0 100%;
+    }
+    
+    .fifth .colored {
+        flex: 0 0 100%;
+    }
+}

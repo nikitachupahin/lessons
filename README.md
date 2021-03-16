@@ -21,3 +21,5 @@
 * [hw-meeting 2](hw-meeting2/product-card.html)
 
 * [hw-lesson 4](hw-lesson4/fluent-calendar.html)
+
+* [hw-lessons 5](hw-lessons5/media-queries-practice.html)
