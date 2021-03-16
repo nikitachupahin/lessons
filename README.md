@@ -22,4 +22,4 @@
 
 * [hw-lesson 4](hw-lesson4/fluent-calendar.html)
 
-* [hw-lesson 5](hw-lessons5/media-queries-practice.html)
+* [hw-lesson 5](hw-lesson5/media-queries-practice.html)
