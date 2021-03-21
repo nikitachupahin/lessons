@@ -18,11 +18,11 @@
 
 - [hw-lesson 3](hw-lesson3/simple-layout.html)
 
-* [hw-meeting 2](hw-meeting2/product-card.html)
+- [hw-meeting 2](hw-meeting2/product-card.html)
 
-* [hw-lesson 4](hw-lesson4/fluent-calendar.html)
+- [hw-lesson 4](hw-lesson4/fluent-calendar.html)
 
-* [hw-lesson 5](hw-lesson5/media-queries-practice.html)
+- [hw-lesson 5](hw-lesson5/media-queries-practice.html)
 
 ## Проекты
 
