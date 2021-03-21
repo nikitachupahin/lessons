@@ -23,3 +23,7 @@
 * [hw-lesson 4](hw-lesson4/fluent-calendar.html)
 
 * [hw-lesson 5](hw-lesson5/media-queries-practice.html)
+
+## Проекты
+
+- [project-template of restaurant](projects-templates/restaurant-template/restaurant-template.html)
