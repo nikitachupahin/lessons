@@ -1,9 +1,5 @@
-@font-face {
-  font-family: "Banny Round";
-  font-style: normal;
-  font-weight: normal;
-  src: local("Banny Round"), url("Banny-Round.woff") format("woff");
-}
+@import url("https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap");
+
 html {
   scroll-behavior: smooth;
 }
@@ -159,12 +155,12 @@ a {
 }
 
 .header__title {
-  font-family: "Banny Round";
+  font-family: "Shadows Into Light", cursive;
   font-style: normal;
   font-weight: normal;
   margin: 0 5% 0 0;
   text-align: center;
-  font-size: 8rem;
+  font-size: 8.6rem;
   line-height: 1;
   color: #ffffff;
   position: relative;
@@ -276,12 +272,12 @@ a {
   flex: 0 0 3.125%;
 }
 .section-title {
+  font-family: "Shadows Into Light", cursive;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 56px;
-  font-family: "Banny Round";
-  font-size: 3rem;
+  font-size: 4rem;
   line-height: 2.7;
   position: relative;
 }
@@ -480,7 +476,7 @@ a {
 }
 .name-event__text {
   display: block;
-  font-family: "Banny Round";
+  font-family: "Shadows Into Light", cursive;
   font-size: 2rem;
   line-height: 1;
   margin-top: 70%;
@@ -544,12 +540,12 @@ a {
 }
 
 .menu__dish {
-  font-family: "Banny Round";
   flex: 0 0 28.36%;
   height: 15.28%;
   margin-right: 6.797%;
   font-size: 1.5rem;
   line-height: 1;
+  font-weight: 700;
   color: #333333;
 }
 .menu__dish:nth-child(3n) {
@@ -559,15 +555,8 @@ a {
   margin-top: 6.945%;
   margin-bottom: 6.945%;
 }
-.menu__dish {
-  font-family: "Banny Round", sans-serif;
-  font-size: 1.5rem;
-  font-weight: 700;
-  line-height: 1;
-  color: #333333;
-}
+
 .transparent-string {
-  font-family: "Open Sans", sans-serif;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1;
@@ -747,6 +736,26 @@ a {
   font-size: 1rem;
   line-height: 1.5;
   color: rgba(255, 255, 255, 0.5);
+}
+@media (min-width: 1441px) {
+  .restaurant-template {
+    background: url(../img/header-bg1.jpg) no-repeat;
+  }
+  .section__team {
+    background: url(../img/our-team1.png) no-repeat;
+  }
+  .section__specialties {
+    background: url(../img/specialties1.jpg) no-repeat;
+  }
+  .section__private-events {
+    background: url(../img/specialties1.jpg) no-repeat;
+  }
+  .header__title {
+    font-size: 9.5rem;
+  }
+  .restaurant__scroll {
+    margin: 0 46.1% 0;
+  }
 }
 @media (max-width: 1400px) {
   .menu__dish {
