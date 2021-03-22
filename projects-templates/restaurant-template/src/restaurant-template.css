@@ -170,7 +170,7 @@ a {
   content: "";
   position: absolute;
   top: 140%;
-  left: 48.8%;
+  left: 48.5%;
   display: block;
   box-sizing: border-box;
   width: 7.05%;
@@ -700,7 +700,7 @@ a {
   justify-content: center;
   width: 6.603%;
   margin: 0 46.3% 0;
-  height: 9.864%;
+  height: 9.128%;
   background: #ffffff;
   border-radius: 50%;
   position: relative;
@@ -708,10 +708,11 @@ a {
 .section__scroll {
   animation: 1s linear 0.5s infinite alternate section__scroll;
 }
+
 @keyframes section__scroll {
   0% {
     position: absolute;
-    top: 20px;
+    top: 23px;
   }
   50% {
     top: 27.5px;
@@ -723,6 +724,7 @@ a {
 .scroll-item {
   width: 60px;
   height: 60px;
+  border-radius: 50%;
 }
 .scroll-item__action {
   width: 60px;
@@ -730,6 +732,12 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
+  border-radius: 50%;
+  transition: 0.2s linear 0s;
+}
+.scroll-item__action:hover,
+.scroll-item__action:focus {
+  box-shadow: 0px 0px 20px #fff;
 }
 .footer__text {
   font-weight: 400;
