@@ -78,9 +78,10 @@ a {
 }
 .restaurant__logo {
   display: flex;
-  flex: 0 0 11.7%;
-  height: 150px;
-  margin: 1.95% 2.73% 0;
+  position: absolute;
+  width: 11.719%;
+  height: 18.533%;
+  margin: 1% 45% 0 44%;
 }
 .restaurant__schedule {
   display: flex;
@@ -121,6 +122,9 @@ a {
   box-sizing: border-box;
   transition: 0.2s linear 0s;
   outline: none;
+}
+.nav-item:nth-child(4) {
+  margin: 0 17% 0 0;
 }
 .nav-item__action:hover,
 .nav-item__action:focus {
@@ -202,6 +206,7 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
+  border: 1px solid #e8c300;
   color: #ffffff;
   background: #e8c300;
   border-radius: 5px;
@@ -401,6 +406,7 @@ a {
   border: 0px solid transparent;
   margin: 0 1.564% 1.564% 0;
   background: #e5e5e5;
+  border: 1px solid #e5e5e5;
   border-radius: 5px;
   padding: 0 0 0 4.1%;
   outline: none;
@@ -614,7 +620,7 @@ a {
   min-height: 57.78%;
 }
 .contact__input {
-  flex: 0 0 31.25%;
+  flex: 0 0 31.1%;
   margin: 0 0.782% 0.782% 0;
   height: 100%;
   padding: 0 0 0 1.5%;
@@ -624,15 +630,20 @@ a {
   border-radius: 5px;
   outline: none;
   transition: 0.2s linear 0s;
+  border: 1px solid #e5e5e5;
 }
 .contact__input:nth-child(3) {
   margin-right: 0;
 }
 .contact__input:nth-child(4) {
-  flex: 0 0 98.38%;
+  flex: 0 0 98.2%;
   margin-right: 0;
   padding-top: 1%;
   min-height: 41.233%;
+}
+.restaurant__nav {
+  display: flex;
+  height: 150px;
 }
 .contact {
   flex: 0 0 50%;
@@ -675,7 +686,7 @@ a {
 }
 .contact__input:nth-child(4):hover,
 .contact__input:nth-child(4):focus {
-  flex: 0 0 98.38%;
+  flex: 0 0 98.2%;
 }
 .section__map {
   width: 100%;
