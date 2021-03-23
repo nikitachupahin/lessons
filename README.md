@@ -24,6 +24,8 @@
 
 - [hw-lesson 5](hw-lesson5/media-queries-practice.html)
 
+* [hw-lesson 6](hw-lesson6/gridDemo.html)
+
 ## Проекты
 
 - [project-template of restaurant](projects-templates/restaurant-template/restaurant-template.html)
