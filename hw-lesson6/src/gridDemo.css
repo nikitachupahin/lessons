@@ -1,0 +1,125 @@
+body {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.header,
+.footer {
+  padding: 25px 0;
+  background-color: #845ec2;
+}
+
+.nav {
+  margin: 20px 0;
+}
+
+.nav__container-item {
+  background-color: #d65db1;
+  padding: 10px;
+  border: 1px dashed #ffc75f;
+}
+
+.nav__container {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.main__item {
+  padding: 0;
+  background-color: #ff6f91;
+  border: 1px dashed #2c73d2;
+}
+
+.main__item--a {
+  padding-top: 45%;
+  background-color: #ff9671;
+}
+
+.main__item--b,
+.main__item--c {
+  padding-top: 45%;
+  background-color: #ffc75f;
+}
+
+.article__item {
+  padding: 25px 0;
+  background-color: #f9f871;
+  border: 1px dashed #008f7a;
+}
+
+.nav__container {
+  display: grid;
+  gap: 5px;
+}
+
+.main {
+  display: grid;
+  gap: 10px;
+}
+.article {
+  display: grid;
+  gap: 5px;
+}
+@media (min-width: 1200px) {
+  body {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 50px 1fr 99fr 50px;
+    grid-template-areas: "header" "nav " "main" "footer";
+  }
+  .header {
+    grid-area: header;
+  }
+
+  .main__item--b {
+    display: grid;
+    grid-area: main-b;
+  }
+  .main__item--c {
+    display: grid;
+    grid-area: main-c;
+  }
+  .main__item--a {
+    display: grid;
+    grid-area: main-a;
+  }
+  .nav__container {
+    grid-area: nav;
+    grid-template-columns: repeat(9, 1fr);
+  }
+  .article {
+    grid-area: article;
+  }
+  .main {
+    grid-area: main;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 50fr 50fr 50fr;
+    grid-template-areas: "main-a main-a" "main-b main-c" "article article";
+  }
+  .article {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .footer {
+    display: grid;
+    grid-area: footer;
+  }
+}
+@media (min-width: 1600px) {
+  .main {
+    grid-area: main;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    grid-template-areas: "main-a main-b main-c article" "main-a main-b main-c article";
+  }
+  .main:not(:last-child) {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 50fr 50fr;
+    grid-template-areas: "main-a main-b article" "main-a main-c article";
+  }
+  .article {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, 20fr);
+    grid-area: article;
+  }
+}
