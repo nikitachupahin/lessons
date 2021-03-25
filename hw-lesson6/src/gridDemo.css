@@ -36,8 +36,7 @@ body {
   background-color: #ff9671;
 }
 
-.main__item--b,
-.main__item--c {
+.main__item--b {
   padding-top: 45%;
   background-color: #ffc75f;
 }
@@ -61,65 +60,44 @@ body {
   display: grid;
   gap: 5px;
 }
+.footer {
+  margin-top: 10px;
+}
 @media (min-width: 1200px) {
-  body {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 50px 1fr 99fr 50px;
-    grid-template-areas: "header" "nav " "main" "footer";
-  }
-  .header {
-    grid-area: header;
-  }
-
-  .main__item--b {
-    display: grid;
-    grid-area: main-b;
-  }
-  .main__item--c {
-    display: grid;
-    grid-area: main-c;
-  }
-  .main__item--a {
-    display: grid;
-    grid-area: main-a;
+  .main {
+    grid-template-areas: "main-a main-a" "main-b1 main-b2" "article article";
   }
   .nav__container {
-    grid-area: nav;
-    grid-template-columns: repeat(9, 1fr);
+    grid-template-areas: "nav-item nav-item nav-item nav-item nav-item nav-item nav-item nav-item nav-item";
+  }
+  .main:nth-child(2) {
+    grid-area: main-b1;
+  }
+  .main:nth-child(3) {
+    grid-area: main-b2;
+  }
+  .main__item--a {
+    grid-area: main-a;
   }
   .article {
     grid-area: article;
+    grid-template-areas: "article-item1 article-item2 article-item3" "article-item1 article-item2 none";
   }
-  .main {
-    grid-area: main;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 50fr 50fr 50fr;
-    grid-template-areas: "main-a main-a" "main-b main-c" "article article";
+  .article:nth-child(1) {
+    grid-area: article-item1;
   }
-  .article {
-    grid-template-columns: repeat(3, 1fr);
+  .article:nth-child(2) {
+    grid-area: article-item2;
   }
-  .footer {
-    display: grid;
-    grid-area: footer;
+  .article:nth-child(3) {
+    grid-area: article-item3;
   }
 }
 @media (min-width: 1600px) {
   .main {
-    grid-area: main;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 1fr;
-    grid-template-areas: "main-a main-b main-c article" "main-a main-b main-c article";
-  }
-  .main:not(:last-child) {
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 50fr 50fr;
-    grid-template-areas: "main-a main-b article" "main-a main-c article";
+    grid-template-areas: "main-a main-b1 article" "main-a main-b2 article";
   }
   .article {
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(5, 20fr);
-    grid-area: article;
+    grid-template-areas: "article-item1" "article-item1" "article-item1" "article-item1" "article-item1";
   }
 }
