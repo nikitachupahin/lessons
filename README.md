@@ -26,6 +26,8 @@
 
 * [hw-lesson 6](hw-lesson6/gridDemo.html)
 
+* [hw-lesson 7](https://www.codewars.com/users/nikitachupahin/completed_solutions)
+
 ## Проекты
 
 - [project-template of restaurant](projects-templates/restaurant-template/restaurant-template.html)
