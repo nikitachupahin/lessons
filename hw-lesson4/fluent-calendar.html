@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./src/fluent-calendar.css">
+    <script defer src="./js/script.js" ></script>
     <title>Fluent Calendar by Alexander Solonikov</title>
 </head>
 <body>
@@ -72,9 +73,9 @@
         <div class="right-panel">
             <div class="right-panel__calendar">
                 <div class="calendar__month">
-                    <a href="#" class="calendar__button"><img  class="button-action" src="./icon/previous.svg" alt="Previous"></a>
+                    <a href="#" class="calendar__button calendar__prev-btn "><img  class="button-action" src="./icon/previous.svg" alt="Previous"></a>
                     <span class="calendar-title">March 2018</span>
-                    <a href="#" class="calendar__button"><img class="button-action" src="./icon/next.svg" alt="Next"></a>
+                    <a href="#" class="calendar__button calendar__next-btn"><img class="button-action" src="./icon/next.svg" alt="Next"></a>
                 </div>
                 <div class="calendar__dates">
                     <ul class="calendar__day-names">
@@ -150,7 +151,7 @@
                         <li class="calendar__day">
                             <a href="#" class="calendar__day-link">21</a>
                         </li>
-                        <li class="calendar__day todays-date">
+                        <li class="calendar__day calendar__day--current">
                             <a href="#" class="calendar__day-link ">22</a>
                         </li>
                         <li class="calendar__day">

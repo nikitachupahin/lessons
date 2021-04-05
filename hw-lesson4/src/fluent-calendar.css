@@ -203,10 +203,10 @@ ul {
   box-sizing: border-box;
   margin: 0 102px 0 99px;
 }
-.calendar__button:first-child {
+.calendar__prev-btn {
   margin-right: 0;
 }
-.calendar__button:last-child {
+.calendar__next-btn {
   margin-left: 0;
 }
 .calendar__month::before,
@@ -317,7 +317,7 @@ ul {
   align-items: center;
   opacity: 0.5;
 }
-.todays-date {
+.calendar__day--current {
   width: 100%;
   height: 100%;
   max-width: 80px;
