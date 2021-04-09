@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timers</title>
+    <link rel="stylesheet" href="./src/clock.css">
+    <script src="./js/clock.js" defer></script>
+    <script src="./js/timer.js" defer></script>
+    <script src="./js/app.js" defer></script>
+</head>
+<body>
+
+    <div class="globalClock"></div>
+
+    <div class="currentClock"></div>
+
+    <div class="currentClockActions">
+        <button data-action="start">Start</button>
+        <button data-action="stop">Stop</button>
+    </div>
+
+    <div class="timer currentTimer">
+        <div class="clock__time">00:00:05</div>
+        <div>
+            <button data-action="start">Start</button>
+            <button data-action="pause">Pause</button>
+            <button data-action="stop">Stop</button>
+        </div>
+    </div>
+</body>
+</html>

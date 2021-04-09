@@ -1,0 +1,18 @@
+.clock {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.clock__time {
+  display: block;
+  text-align: center;
+
+  font-size: 2rem;
+}
+
+.clock__greeting {
+  display: block;
+  text-align: center;
+  font-size: 1.5rem;
+}
