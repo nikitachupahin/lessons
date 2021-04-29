@@ -159,7 +159,7 @@ h3 {
 .main__page-first__screen {
   width: 100%;
   height: 17.4145%;
-  background: url("/fe2402/hw-lessons/ElectricCar/img/sq.png") no-repeat;
+  background: url("../img/sq.png") no-repeat;
   position: relative;
 }
 .first__screen-img {
