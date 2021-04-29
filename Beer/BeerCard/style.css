@@ -1,0 +1,28 @@
+.beer {
+  box-sizing: border-box;
+
+  border: 1px solid rgb(58, 57, 57);
+  border-radius: 12px;
+
+  padding: 12px;
+}
+
+.beer__image-wrapper {
+  margin: 0 0 12px;
+
+  display: flex;
+  justify-content: center;
+}
+
+.beer__image {
+  max-height: 150px;
+}
+
+.beer__name {
+  font-size: 2em;
+  margin: 0 0 12px;
+}
+
+.beer__description {
+  font-size: 1.2em;
+}
