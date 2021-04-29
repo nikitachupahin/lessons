@@ -31,3 +31,5 @@
 ## Проекты
 
 - [project-template of restaurant](projects-templates/restaurant-template/restaurant-template.html)
+
+* [project-template of electric car](ElectricCar/ElectricCar.html)
