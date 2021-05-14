@@ -11,6 +11,13 @@ body {
   -o-user-select: none;
   user-select: none;
 }
+.body_hide {
+  opacity: 0;
+  transition: 0.9s opacity ease-in-out;
+}
+.body_visible {
+  opacity: 1;
+}
 ul {
   margin: 0;
   padding: 0;
