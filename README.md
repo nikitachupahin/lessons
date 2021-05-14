@@ -32,4 +32,4 @@
 
 - [project-template of restaurant](projects-templates/restaurant-template/restaurant-template.html)
 
-* [project-template of electric car](ElectricCar/ElectricCar.html)
+* [project-template of electric car](ElectricCar/mainPageOfElectricCar.html)
