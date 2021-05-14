@@ -13,9 +13,9 @@ export default class CatalogPage {
     }
     createAndRenderCardsOfCatalog() {
         
-        this.containerCatalogCards.innerHTML =  CatalogPageData.map( ({ img, name, features, button, id, action }, slideIndex) => {
-            // console.log({ img, name, features, button })
+        this.containerCatalogCards.innerHTML =  CatalogPageData.map( ({ img, name, features, button, id, action },slideIndex) => {
             
+        
             let position = "slider__item-next";
                 if( slideIndex === 0) {
                     position = "slider__item-active";

@@ -211,8 +211,7 @@ const CatalogPageData = [
         action: "viewAutoPage.html"
         }
     
-    
-        
+       
 ];
 
 export default CatalogPageData;

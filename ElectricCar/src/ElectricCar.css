@@ -525,6 +525,7 @@ h3 {
   max-height: 694px;
   position: relative;
   width: 100%;
+  box-shadow: 0px 9px 49px rgba(142, 136, 136, 0.16);
 }
 
 /* .catalog-item:not(:last-child) {
@@ -533,6 +534,9 @@ h3 {
 .catalog-item {
   box-shadow: 0px 9px 49px rgba(142, 136, 136, 0.16);
   border-radius: 10px;
+}
+.catalog-item:not(:last-child) {
+  margin-right: 1.745%;
 }
 
 .catalog-item__btn {
@@ -753,10 +757,8 @@ h3 {
 .arrow-1,
 .arrow-2 {
   position: relative;
-  top: 20px;
-  height: 50px;
-  background-color: #000000;
-  left: 16px;
+  top: 30px;
+  left: -15px;
   display: block;
   transition: 0.2s linear 0.1s;
 }
@@ -832,24 +834,24 @@ h3 {
 }
 @keyframes arrow-2 {
   0% {
-    left: 16px;
+    left: -15px;
   }
   50% {
-    left: 26px;
+    left: -5px;
   }
   100% {
-    left: 16px;
+    left: -15px;
   }
 }
 @keyframes arrow-1 {
   0% {
-    left: 16px;
+    left: -15px;
   }
   50% {
-    left: 6px;
+    left: -25px;
   }
   100% {
-    left: 16px;
+    left: -15px;
   }
 }
 .catalog__page-docs {
@@ -881,6 +883,7 @@ h3 {
   width: 73px;
   height: 73px;
   background-color: transparent;
+  opacity: 1;
 }
 .docs__item-far {
   display: none;

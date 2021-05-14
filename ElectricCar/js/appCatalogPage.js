@@ -1,6 +1,6 @@
 import CatalogPage from './catalogPage.js';
 
-const catalogPage = new CatalogPage();
+const page = new CatalogPage();
 
 setTimeout(function(){
 	document.body.classList.add('body_visible');
