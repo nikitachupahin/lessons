@@ -23,7 +23,7 @@ export default class CatalogSlider {
     
     return `
     <div class="catalog__items-slider ${position}">
-        <div class="catalog-item ">
+        <div onclick="location.href='viewAutoPage.html';" class="catalog-item ">
         <div class="catalog__img-wrapper">
             <img class="item-img" src="${img}" alt="Car">
         </div>
@@ -84,7 +84,7 @@ export default class CatalogSlider {
                     <a href="${action}" class="view-action action__sign-up action__detailed">${button}</a>
     </div>
     </div>
-    <div class="catalog-item ">
+    <div onclick="location.href='viewAutoPage.html';" class="catalog-item ">
     <div class="catalog__img-wrapper">
         <img class="item-img" src="${img}" alt="Car">
     </div>
@@ -144,7 +144,7 @@ export default class CatalogSlider {
                     <a href="${action}" class="view-action action__sign-up action__detailed">${button}</a>
     </div>
     </div>
-    <div class="catalog-item ">
+    <div onclick="location.href='viewAutoPage.html';" class="catalog-item ">
     <div class="catalog__img-wrapper">
         <img class="item-img" src="${img}" alt="Car">
     </div>
@@ -227,6 +227,6 @@ export default class CatalogSlider {
     launchCatalogSlider() {
         this.createCardsOfCatalog();
         this.startCatalogSlider();
-        setInterval(this.startCatalogSlider, 8000);
+        setInterval(this.startCatalogSlider, 10000);
     }
 }

@@ -2,7 +2,7 @@ export default class Parallax {
     constructor() {
         window.onload = this.loadParallax();
         this.loadParallax();
-        this.scrollParallax();
+        // this.scrollParallax();
     }
     loadParallax() {
         const parallax = document.querySelector('.main__page-first__screen');
@@ -40,38 +40,38 @@ export default class Parallax {
         })
         
     }
-    scrollParallax() {
-        let thresholds = [];
-        for(let i = 0; i <= 1.0; i += 0.005) {
-            thresholds.push(i);
-        };
+    // scrollParallax() {
+    //     let thresholds = [];
+    //     for(let i = 0; i <= 1.0; i += 0.005) {
+    //         thresholds.push(i);
+    //     };
 
-        const callback = function(entries, observer) {
-            const parallax = document.querySelector('.main__page-first__screen');
-            const parallaxHeight = parallax.offsetHeight;
-            const scrollTopProcent = window.pageYOffset / parallaxHeight * 100;
-            setParallaxItemsStyle(scrollTopProcent);
+    //     const callback = function(entries, observer) {
+    //         const parallax = document.querySelector('.main__page-first__screen');
+    //         const parallaxHeight = parallax.offsetHeight;
+    //         const scrollTopProcent = window.pageYOffset / parallaxHeight * 100;
+    //         setParallaxItemsStyle(scrollTopProcent);
 
-        };
-        const observer = new IntersectionObserver(callback, {
-            threshold: thresholds
-        });
+    //     };
+    //     const observer = new IntersectionObserver(callback, {
+    //         threshold: thresholds
+    //     });
 
-        const scrollItem = document.querySelector('.page-catalog');
-        const scrollItem1 = document.querySelector('.page-advantages');
-        const scrollItem2 = document.querySelector('.page-map');
-        const scrollItem3 = document.querySelector('.page-news');
-        const scrollItem4 = document.querySelector('.page-footer');
+    //     const scrollItem = document.querySelector('.page-catalog');
+    //     const scrollItem1 = document.querySelector('.page-advantages');
+    //     const scrollItem2 = document.querySelector('.page-map');
+    //     const scrollItem3 = document.querySelector('.page-news');
+    //     const scrollItem4 = document.querySelector('.page-footer');
 
-        observer.observe(scrollItem, scrollItem1, scrollItem2,  scrollItem3,  scrollItem4);
+    //     observer.observe(scrollItem, scrollItem1, scrollItem2,  scrollItem3,  scrollItem4);
 
-        function setParallaxItemsStyle(scrollTopProcent) {
-            scrollItem.style.cssText = `transform: translate(0%,-${scrollTopProcent / 3}%);`;
-            scrollItem1.style.cssText = `transform: translate(0%,-${scrollTopProcent / 3}%);`;
-            scrollItem2.style.cssText = `transform: translate(0%,-${scrollTopProcent / 4.25}%);`;
-            scrollItem3.style.cssText = `transform: translate(0%,-${scrollTopProcent / 3.32}%);`;
-            // scrollItem4.style.cssText = `transform: translate(0%,-${scrollTopProcent / 1.16}%);`;
-        }
-    }
+    //     function setParallaxItemsStyle(scrollTopProcent) {
+    //         scrollItem.style.cssText = `transform: translate(0%,-${scrollTopProcent / 3}%);`;
+    //         scrollItem1.style.cssText = `transform: translate(0%,-${scrollTopProcent / 3}%);`;
+    //         scrollItem2.style.cssText = `transform: translate(0%,-${scrollTopProcent / 4.25}%);`;
+    //         scrollItem3.style.cssText = `transform: translate(0%,-${scrollTopProcent / 3.32}%);`;
+    //         scrollItem4.style.cssText = `transform: translate(0%,-${scrollTopProcent / 1.16}%);`;
+    //     }
+    // }
     
 }

@@ -1,14 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./src/ElectricCar.css">
     <script src="./js/app.js" type="module"></script>
-    <title>Просмотр автомобиля</title>
+    <title>Статья</title>
 </head>
 <body class="body_hide">
     <header class="main__page-header lock-padding">
@@ -79,88 +78,82 @@
             </div>
         </nav>
     </header>
-    <main class="main__page-body page__view-car lock-padding">
-        <div class="main__page-wrapper catalog-items__wrapper">
-            <div class="page-wrapper__view-auto">
-                <div class="view-auto__imgs">
-
-                </div>
-                <div class="view-auto__features">
-                    <div class="description__title">2018 Tesla Model 3 Mid Range</div>
-                    <div class="features-names">
-                        <div class="features">
-                            <div class="features-name">Марка</div>
-                            <div class="features-description">Tesla</div>
+    <main class="main__page-body lock-padding">
+        <div class="article__page-wrapper">
+            <h2 class="name-screen">
+                У хэтчбeка Chevrolet Bolt появился собрат-кроссовер: Chevrolet Bolt EUV.
+            </h2>
+            <div class="article-items">
+               <div class="article-item">
+                   <h3 class="article-item__title">Две версии Chevrolet Bolt: хэтчбек EV и кроссовер EUV.</h3>
+                   <div class="article-item__description">
+                    С 2021 года помимо привычного хэтчбека Bolt EV покупатели могут приобрести и псевдо-кроссовер Bolt EUV. Он выше и длиннее своего собрата: колесная база увеличена до 2675 мм, а за счет более высокой посадки запас места в салоне стал больше.
+                   </div>
+                   <div class="article-item__img-wrapper">
+                       <img class="img" src="./img/road.png" alt="Road">
+                   </div>
+               </div> 
+               <div class="article-item">
+                    <h3 class="article-item__title">Цены - вниз.</h3>
+                    <div class="article-item__description">
+                        Рестайлинговый Chevrolet Bolt порадовал поклонников не только обновленной внешностью, продвинутыми дорожными “ассистентами”, но и скидками. Снижены цены на все версии: базовая версия Bolt EV подешевела сразу на $5000, и теперь стоит от $31995. Кроссовер Bolt EUV чуть дороже - от $33995.
+                    </div>
+                    <div class="article-item__img-wrapper">
+                        <img class="img" src="./img/beach.png" alt="Beach">
+                    </div>
+               </div>
+               <div class="article-item">
+                    <h3 class="article-item__new-title">Обновленный снаружи, обновленный внутри.</h3>
+                    <div class="article-item__description">
+                        <div class="article-item__description-sentence">
+                            Оговоримся сразу: о смене поколений речь не идет. В ходе рестайлинга (или как его еще называют, фейслифтинга), Chevrolet Bolt сохранил прежнюю платформу и кузов, а отличия скрываются только в деталях. У него новые бамперы спереди и сзади, новая оптика и иная передняя решетка. 
                         </div>
-                        <div class="features">
-                            <div class="features-name">Модель</div>
-                            <div class="features-description">Model 3 Mid Range</div>
+                        <div class="article-item__description-sentence">
+                            Внутри обновлений больше: интерьер действительно можно назвать полностью новым. Новая панель, рулевое колесо, передние кресла и 10,2-дюймовый экран мультимедийной панели. Изменился даже алгоритм управления режимами движения - теперь “паркинг” “драйв”, “нейтраль” и “реверс” включаются кнопками.
                         </div>
-                        <div class="features">
-                            <div class="features-name">Тип кузова</div>
-                            <div class="features-description">лифтбек</div>
+                        <div class="article-item__description-sentence">
+                            Новые позиции в списке оснащения - вентиляция передних кресел и подогрев переднего и заднего рядов у хэтчбека, и опционная панорамная крыша для кроссовера.
                         </div>
-                        <div class="features">
-                            <div class="features-name">Вид</div>
-                            <div class="features-description">Электромобиль</div>
-                        </div>
-                        <div class="features">
-                            <div class="features-name">Двигатель</div>
-                            <div class="features-description">-</div>
-                        </div>
-                        <div class="features">
-                            <div class="features-name">Мощность</div>
-                            <div class="features-description">258 л.с.</div>
-                        </div>
-                        <div class="features">
-                            <div class="features-name">Батарея</div>
-                            <div class="features-description">66 квт/ч</div>
-                        </div>
-                        <div class="features">
-                            <div class="features-name">Запас хода(NEDC/EPA/WLTP)</div>
-                            <div class="features-description">420 км.</div>
-                        </div>
-                        <div class="features">
-                            <div class="features-name">Время зарядки(220В/380В/DC)</div>
-                            <div class="features-description">9,5ч./--/--</div>
-                        </div>
-                        <div class="features">
-                            <div class="features-name">Разгон 0-100 км/ч</div>
-                            <div class="features-description">5,6 сек.</div>
-                        </div>
-                        <div class="features">
-                            <div class="features-name">Максимальная скорость</div>
-                            <div class="features-description">201 км/ч</div>
-                        </div>
+                    </div>
+                    <div class="article-item__img-wrapper">
+                        <img class="img" src="./img/cabin.png" alt="Cabin">
+                    </div>
+               </div>
+               <div class="article-item">
+                <h3 class="article-item__title">Обновленный “софт”.</h3>
+                <div class="article-item__description">
+                    <div class="article-item__description-sentence">
+                        Кроссовер Chevrolet Bolt EUV одним из первых получил автопилот второго уровня - систему Super Cruise. Правда, пока пользоваться им можно только в США и Канаде, на специально “оцифрованных” дорогах, где электронный ассистент знает все до деталей. 
+                    </div>
+                    <div class="article-item__description-sentence">
+                        На остальных дорогах пока придется довольствоваться ассистентами попроще. Хотя как сказать: семейство Bolt 2021 года имеет целый пакет электронных систем безопасности: удержание в полосе, автоматическое переключения с дальнего света на ближний, обнаружение пешеходов, предупреждение о лобовом столкновении, индикатор дистанции и автоматическое экстренное торможение.
                     </div>
                 </div>
-            </div>
-            <div class="page-wrapper__view-description">
-                <h3 class="view-description__title">
-                    Описание
-                </h3>
-                <div class="view-description__text">
-                    <div class="text-title">
-                        TESLA MODEL 3 Mid Range
-                    </div>
-                    <div class="text__sentence first-sentence">
-                        Автомобиль прибыл из Америки, Без пробега по РБ. Машина в отличном состоянии как внешне, внутри, так и технически. Оригинальный пробег всего 25000км.
-                    </div>
-                    <div class="text__sentence second-sentence">
-                        Очень динамичный и вместительный электромобиль. Разгон до 100км за 5.6сек. Конец 2018 года, на процессоре Intel. Запас хода в среднем 420км, зарядка от CHADEMO 1 час 30 минут, зарядка от сети 220 около 9.5часов. Ёмкость Батареи 66kВт. Максимальная скорость 200км\ч.
-                    </div>
-                    <div class="text__sentence third-sentence">
-                        Хорошая комплектация: кожаный салон, Подогревы сидений передних, климат контроль, бесключевой доступ, центральный замок, электро стекла и электро зеркала, складывания зеркал, датчик света и дождя, литые диски R19, порт быстрой зарядки CHADEMO, камера заднего вида, автопарковка, круиз контроль, заводская сигнализация, ABS и др. опции.
-                    </div>
+                <div class="article-item__img-wrapper">
+                    <img class="img" src="./img/rudder.png" alt="Rudder">
                 </div>
-            </div>
-            <div class="page-wrapper__view-actions">
-                <a href="#popup__item-record" class="view-action  action__sign-up popup-link">
-                    Тест драйв
-                </a>
-                <a href="#popup__item-rent" class="view-action action__rent popup-link">
-                    Аренда электромобиля
-                </a>
+               </div>
+               <div class="article-item">
+                <h3 class="article-item__new-title">“Одна педаль” и большие пробеги на одной зарядке.</h3>
+                <div class="article-item__description">
+                    Всем известно, что рекуперация - это большой плюс для электрокаров. Ведь каждый раз, когда вы отпускаете педаль “газа”, электромотор начинает работать как генератор - и заряжает батарею. А для того, чтобы делать это эффективнее, обновленный Bolt получил систему “одна педаль”. Теперь, после отпускания “газа”, он замедляется интенсивнее, вплоть до полной остановки. Это позволяет ездить в обычных режимах вообще без касания педали тормоза.
+                </div>
+                <div class="article-item__img-wrapper article-wrapper">
+                    <img class="img" src="./img/sea.png" alt="Sea">
+                </div>
+                <div class="article-item__description-sentence">
+                    И в сочетании с батареей увеличенной емкости (с 60 до 65 кВт ч), которую Bolt получил в прошлом году, это позволяет добиться приличных пробегов на одной зарядке. У хэтчбека он составляет 416 км, у более высокого и массивного кроссовера EUV - 402 км.
+                </div>
+                <div class="article-item__description-sentence">
+                    Также появился зарядный шнур Dual Level Charge со сменной вилкой для разных типов зарядок. И если это мощная станция, хэтчбек Bolt за 30 минут набирает 161 км пробега, а кроссовер - 153 км. 
+                </div>
+                <div class="article-item__img-wrapper article-wrapper">
+                    <img class="img" src="./img/trunk.png" alt="Trunk">
+                </div>
+                <div class="article-item__description-sentence last-sentence">
+                    Заинтересовались? Тогда пишите, звоните, приезжайте в ИнкоАвто. Подберем, доставим, растаможим и отправим в любой регион СНГ!
+                </div>
+               </div>
             </div>
         </div>
         <div id="popup__item" class="popup__item">
@@ -178,90 +171,6 @@
                             <div class="item-input-wrapper">
                                 <input name="accept" class="item-radio __required" id="item-radio" type="checkbox" >
                                 <label class="label-radio" for="item-radio">Я принимаю пользовательское соглашение</label>
-                            </div>
-                            <div class="form-btn__wrapper">
-                                <button  type="submit" class="view-action action__sign-up  form-btn ">Отправить</button>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div id="popup__item-record" class="popup__item popup__item-record">
-            <div class="popup__item__body">
-                <div class="popup__item__content popup__item-record--content">
-                    <div class="content__img-wrapper">
-                        <img class="img" src="./img/comp.png" alt="Computer" >
-                    </div>
-                    <div class="content__description">
-                        <div class="content__description-title record-content__description-title">Запись на тест драйв</div>
-                        <form id="formRecord" class="content__description-form">
-                            <input name="name" class="form-item item-input popup__input _required" placeholder="Имя" type="text" autocomplete="off">
-                            <input name="phone" type="tel" class="form-item item-input popup__input _required" placeholder="Телефон" autocomplete="off">
-                            <div class="form__select-items">
-                                <label class="form__select-item">
-                                    Дата
-                                    <select class="form__select-item--data _required"  >
-                                        <option class="item--data__option" value="21.04.2021" selected>21.04.2021</option>
-                                        <option class="item--data__option" value="21.04.2021">21.04.2021</option>
-                                        <option class="item--data__option" value="21.04.2021">21.04.2021</option>
-                                        <option class="item--data__option" value="21.04.2021">21.04.2021</option>
-                                        <option class="item--data__option" value="21.04.2021">21.04.2021</option>
-                                        <option class="item--data__option" value="21.04.2021">21.04.2021</option>
-                                        <option class="item--data__option" value="21.04.2021">21.04.2021</option>
-                                        <option class="item--data__option" value="21.04.2021">21.04.2021</option>
-                                    </select>
-                                </label>
-                                <label class="form__select-item">
-                                    Время
-                                    <select class="form__select-item--time _required">
-                                        <option value="10:00" selected>10:00</option>
-                                        <option value="10:00">10:00</option>
-                                        <option value="11:00">11:00</option>
-                                        <option value="12:00">12:00</option>
-                                        <option value="13:00">13:00</option>
-                                        <option value="14:00">14:00</option>
-                                        <option value="15:00">15:00</option>
-                                        <option value="16:00">16:00</option>
-                                    </select>
-                                </label>
-                            </div>
-                            <div class="item-input-wrapper">
-                                <input name="accept" class="item-radio _required" id="item-radio1" type="checkbox" >
-                                <label class="label-radio" for="item-radio1">Я принимаю пользовательское соглашение</label>
-                            </div>
-                            <div class="form-btn__wrapper">
-                                <button  type="submit" class="view-action action__sign-up  form-btn ">Отправить</button>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div id="popup__item-rent" class="popup__item popup__item-rent">
-            <div class="popup__item__body">
-                <div class="popup__item__content popup__item-rent--content">
-                    <div class="content__img-wrapper">
-                        <img class="img img-rent" src="./img/rent.png" alt="Rent" >
-                    </div>
-                    <div class="content__description">
-                        <div class="content__description-title rent-content__description-title">Аренда авто</div>
-                        <form id="formRent" class="content__description-form">
-                            <input name="name" class="form-item item-input popup__input _req" placeholder="ФИО" type="text" autocomplete="off">
-                            <input name="phone" type="tel" class="form-item item-input popup__input _req" placeholder="Телефон" autocomplete="off">
-                            <div class="form__select-items">
-                                <label class="form__select-item _req">
-                                    Дата аренды
-                                    <input class="form__select-item--data input__item-data" value="" type="date" placeholder="21.04.2021">
-                                </label>
-                                <label class="form__select-item _req">
-                                    Время аренды
-                                    <input class="form__select-item--time input__item-time" value="" type="time" placeholder="11:00">
-                                </label>
-                            </div>
-                            <div class="item-input-wrapper">
-                                <input name="accept" class="item-radio _req" id="item-radio4" type="checkbox" >
-                                <label class="label-radio" for="item-radio4">Я принимаю пользовательское соглашение</label>
                             </div>
                             <div class="form-btn__wrapper">
                                 <button  type="submit" class="view-action action__sign-up  form-btn ">Отправить</button>

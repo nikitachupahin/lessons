@@ -29,7 +29,7 @@ export default class NewsSlider {
                     <img class="item-img" src="${imgOfNew}" alt="Picture">
                 </div>
                 <div class="item__title-action">
-                    <a href="#" class="title-action">${titleOfNew}</a>
+                    <a href="articlePage.html" class="title-action">${titleOfNew}</a>
                 </div>
                 <div class="item__description-news">${descriptionOfNew}</div>
                 </div>
@@ -38,7 +38,7 @@ export default class NewsSlider {
                     <img class="item-img" src="${imgOfNew}" alt="Picture">
                 </div>
                 <div class="item__title-action">
-                    <a href="#" class="title-action">${titleOfNew}</a>
+                    <a href="articlePage.html" class="title-action">${titleOfNew}</a>
                 </div>
                 <div class="item__description-news">${descriptionOfNew}</div>
                 </div>
@@ -47,7 +47,7 @@ export default class NewsSlider {
                     <img class="item-img" src="${imgOfNew}" alt="Picture">
                 </div>
                 <div class="item__title-action">
-                    <a href="#" class="title-action">${titleOfNew}</a>
+                    <a href="articlePage.html" class="title-action">${titleOfNew}</a>
                 </div>
                 <div class="item__description-news">${descriptionOfNew}</div>
                 </div> 
@@ -74,6 +74,6 @@ export default class NewsSlider {
     launchNewsSlider() {
         this.createCardsOfNews();
         this.startNewsSlider();
-        setInterval(this.startNewsSlider, 8000);
+        setInterval(this.startNewsSlider, 10000);
     }    
 }

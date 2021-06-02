@@ -7,11 +7,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./src/ElectricCar.css">
-    <script src="./js/appMainPage.js" type="module"></script>
-    <title>ElectricCar</title>
+    <script src="./js/app.js" type="module"></script>
+    <title>Главная страница</title>
 </head>
 <body class="body_hide">
-        <header class="main__page-header">
+    <header class="main__page-header lock-padding">
             <div class="main__page-wrapper header-wrapper">
                 <div class="header-logo">
                     <a href="./mainPageOfElectricCar.html" class="action-logo">
@@ -42,17 +42,17 @@
                     </div>
                     <div class="header__item call-item">
                         <div class="item__action">
-                            <a href="#" class="action__tel">
+                            <a href="#popup__item" class="action__tel popup-link">
                                 <svg viewBox="0 0 14 14" class="action-icon tel__icon">
                                     <path d="M12.8766 9.1894C12.0195 9.1894 11.1779 9.05534 10.3804 8.79178C9.98958 8.65849 9.50917 8.78077 9.27066 9.02573L7.6965 10.2141C5.87092 9.23956 4.7464 8.11541 3.78521 6.30354L4.93857 4.77039C5.23822 4.47114 5.3457 4.03401 5.21693 3.62385C4.95224 2.82213 4.81779 1.98093 4.81779 1.12343C4.81782 0.503964 4.31386 0 3.69443 0H1.12339C0.503964 0 0 0.503964 0 1.12339C0 8.22365 5.77638 14 12.8766 14C13.4961 14 14 13.496 14 12.8766V10.3127C14 9.69336 13.496 9.1894 12.8766 9.1894Z"/>
                                 </svg>
                             </a>
                         </div>    
                         <div class="item-wrapper">
-                            <a href="#" class="tel" >+7 4742 90 90 90</a>
+                            <a href="#popup__item" class="tel popup-link" >+7 4742 90 90 90</a>
                         </div>
                         <div class="item__button-wrapper">
-                            <button type="button" class="item__button">Заказать звонок</button>
+                            <a href="#popup__item" class="item__button popup-link">Заказать звонок</a>
                         </div>
                     </div>
                 </div>
@@ -67,19 +67,19 @@
                             <a href="catalogPageOfElectricCar.html" class="action-text">Каталог автомобилей</a>
                         </li>
                         <li class="item-action">
-                            <a href="#" class="action-text">Сеть зарядных станций</a>
+                            <a href="chargingStationPage.html" class="action-text">Сеть зарядных станций</a>
                         </li>
                         <li class="item-action">
-                            <a href="#" class="action-text">Вопрос-ответ</a>
+                            <a href="questionAnswer.html" class="action-text">Вопрос-ответ</a>
                         </li>
                         <li class="item-action">
-                            <a href="#" class="action-text">Полезная информация</a>
+                            <a href="usefulData.html" class="action-text">Полезная информация</a>
                         </li>
                     </ul>
                 </div>
             </nav>
-        </header>
-        <main class="main__page-body">
+    </header>
+    <main class="main__page-body lock-padding">
             <div class="main__page-first__screen">
                 <div class="first-screen-blackout">
                     <img class="blackout-img" src="./img/blackout.png" alt="blackout">
@@ -92,14 +92,10 @@
                         <div class="offer__description">
                             Узнайте, как использовать самый экологичный автомобиль в повседневной жизни
                         </div>
-                        <form class="offer__btns">
-                            <button type="button" class="item__button offer__btn-test">
-                                Тест драйв
-                            </button>
-                            <button type="button" class="item__button offer__btn-rental">
-                                Аренда электромобиля
-                            </button>
-                        </form>
+                        <div class="offer__btns">
+                            <a href="#popup__item-record" class="offer__btn test-btn popup-link">Тест драйв</a>
+                            <a href="catalogPageOfElectricCar.html" class="offer__btn rent-btn">Аренда электромобиля</a>
+                        </div>
                     </div>
                     <div class="first__screen-blocks">
                         <div class="blocks-item">
@@ -144,7 +140,7 @@
                             </div>
                         </div>
                     <div class="catalog-btn">
-                        <a href="catalogPageOfElectricCar.html" class="item__button offer__btn-rental">Посмотреть все автомобили</a>
+                        <a href="catalogPageOfElectricCar.html" class="catalog__main-btn">Посмотреть все автомобили</a>
                     </div>
                 </div>
             </div>
@@ -256,7 +252,7 @@
                 </div>
             </div>
             <div class="main__page-map page-map">
-                <div class="main__page-wrapper general-wrapper">
+                <div class="main__page-wrapper page__map-wrapper">
                     <h2 class="name-screen">
                         Карта электрозаправок
                     </h2>
@@ -266,7 +262,7 @@
                 </div>
             </div>
             <div class="main__page-news page-news">
-                <div class="main__page-wrapper general-wrapper">
+                <div class="main__page-wrapper page__news-wrapper">
                     <h2 class="name-screen">
                         Полезные материалы
                     </h2>
@@ -274,8 +270,83 @@
                     </div>
                 </div>
             </div>
-        </main>
-        <footer class="main__page-footer page-footer">
+            <div id="popup__item" class="popup__item">
+                <div class="popup__item__body">
+                    <div class="popup__item__content">
+                        <div class="content__img-wrapper">
+                            <img class="img" src="./img/men.png" alt="Men" >
+                        </div>
+                        <div class="content__description">
+                            <div class="content__description-title">Заказать обратный звонок</div>
+                            <div class="content__description-subtitle">Отправьте нам свой номер телефона и мы Вам позвоним!</div>
+                            <form id="formReserveCall" class="content__description-form">
+                                <input name="name" class="form-item item-input popup__input __required" placeholder="Имя" type="text"  autocomplete="off">
+                                <input name="phone" type="tel" class="form-item item-input popup__input __required _tel"  placeholder="Телефон (+380ХХХХХХХХХ)" autocomplete="off" >
+                                <div class="item-input-wrapper">
+                                    <input name="accept" class="item-radio __required" id="item-radio" type="checkbox" >
+                                    <label class="label-radio" for="item-radio">Я принимаю пользовательское соглашение</label>
+                                </div>
+                                <div class="form-btn__wrapper">
+                                    <button  type="submit" class="view-action action__sign-up  form-btn ">Отправить</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="popup__item-record" class="popup__item popup__item-record">
+                <div class="popup__item__body">
+                    <div class="popup__item__content popup__item-record--content">
+                        <div class="content__img-wrapper">
+                            <img class="img" src="./img/comp.png" alt="Computer" >
+                        </div>
+                        <div class="content__description">
+                            <div class="content__description-title record-content__description-title">Запись на тест драйв</div>
+                            <form id="formRecord" class="content__description-form">
+                                <input name="name" class="form-item item-input popup__input _required" placeholder="Имя" type="text" autocomplete="off">
+                                <input name="phone" type="tel" class="form-item item-input popup__input _required" placeholder="Телефон" autocomplete="off">
+                                <div class="form__select-items">
+                                    <label class="form__select-item">
+                                        Дата
+                                        <select class="form__select-item--data _required"  >
+                                            <option class="item--data__option" value="21.04.2021" selected>21.04.2021</option>
+                                            <option class="item--data__option" value="21.04.2021">21.04.2021</option>
+                                            <option class="item--data__option" value="21.04.2021">21.04.2021</option>
+                                            <option class="item--data__option" value="21.04.2021">21.04.2021</option>
+                                            <option class="item--data__option" value="21.04.2021">21.04.2021</option>
+                                            <option class="item--data__option" value="21.04.2021">21.04.2021</option>
+                                            <option class="item--data__option" value="21.04.2021">21.04.2021</option>
+                                            <option class="item--data__option" value="21.04.2021">21.04.2021</option>
+                                        </select>
+                                    </label>
+                                    <label class="form__select-item">
+                                        Время
+                                        <select class="form__select-item--time _required">
+                                            <option value="10:00" selected>10:00</option>
+                                            <option value="10:00">10:00</option>
+                                            <option value="11:00">11:00</option>
+                                            <option value="12:00">12:00</option>
+                                            <option value="13:00">13:00</option>
+                                            <option value="14:00">14:00</option>
+                                            <option value="15:00">15:00</option>
+                                            <option value="16:00">16:00</option>
+                                        </select>
+                                    </label>
+                                </div>
+                                <div class="item-input-wrapper">
+                                    <input name="accept" class="item-radio _required" id="item-radio1" type="checkbox" >
+                                    <label class="label-radio" for="item-radio1">Я принимаю пользовательское соглашение</label>
+                                </div>
+                                <div class="form-btn__wrapper">
+                                    <button  type="submit" class="view-action action__sign-up  form-btn ">Отправить</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </main>
+    <footer class="main__page-footer page-footer lock-padding">
             <div class="main__page-wrapper footer-wrapper">
                 <ul class="nav-items footer-items">
                     <li class="item-action">
@@ -285,13 +356,13 @@
                         <a href="catalogPageOfElectricCar.html" class="action-text footer__action-text">Каталог автомобилей</a>
                     </li>
                     <li class="item-action">
-                        <a href="#" class="action-text footer__action-text">Сеть зарядных станций</a>
+                        <a href="chargingStationPage.html" class="action-text footer__action-text">Сеть зарядных станций</a>
                     </li>
                     <li class="item-action">
-                        <a href="#" class="action-text footer__action-text">Вопрос-ответ</a>
+                        <a href="questionAnswer.html" class="action-text footer__action-text">Вопрос-ответ</a>
                     </li>
                     <li class="item-action">
-                        <a href="#" class="action-text footer__action-text">Полезная информация</a>
+                        <a href="usefulData.html" class="action-text footer__action-text">Полезная информация</a>
                     </li>
                 </ul>
                 <div class="footer__logo-wrapper">
@@ -327,23 +398,22 @@
                     </div>
                     <div class="header__item call-item">
                         <div class="item__action">
-                            <a href="#" class="action__tel">
+                            <a href="#popup__item" class="action__tel popup-link">
                                 <svg viewBox="0 0 14 14" class="action-icon tel__icon">
                                     <path d="M12.8766 9.1894C12.0195 9.1894 11.1779 9.05534 10.3804 8.79178C9.98958 8.65849 9.50917 8.78077 9.27066 9.02573L7.6965 10.2141C5.87092 9.23956 4.7464 8.11541 3.78521 6.30354L4.93857 4.77039C5.23822 4.47114 5.3457 4.03401 5.21693 3.62385C4.95224 2.82213 4.81779 1.98093 4.81779 1.12343C4.81782 0.503964 4.31386 0 3.69443 0H1.12339C0.503964 0 0 0.503964 0 1.12339C0 8.22365 5.77638 14 12.8766 14C13.4961 14 14 13.496 14 12.8766V10.3127C14 9.69336 13.496 9.1894 12.8766 9.1894Z"/>
                                 </svg>
                             </a>
                         </div>    
                         <div class="item-wrapper">
-                            <a href="#" class="tel" >+7 4742 90 90 90</a>
+                            <a href="#popup__item" class="tel popup-link" >+7 4742 90 90 90</a>
                         </div>
                         <div class="item__button-wrapper">
-                            <button type="button" class="item__button">Заказать звонок</button>
+                            <a href="#popup__item" class="item__button popup-link">Заказать звонок</a>
                         </div>
                     </div>
                     </div>
                 </div>
             </div>
-        </footer>
-    </div>
+    </footer>
 </body>
 </html>

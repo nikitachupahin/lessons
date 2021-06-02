@@ -8,7 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./src/ElectricCar.css">
     <script src="./js/app.js" type="module"></script>
-    <title>Просмотр автомобиля</title>
+    <title>Сеть зарядок</title>
 </head>
 <body class="body_hide">
     <header class="main__page-header lock-padding">
@@ -79,88 +79,37 @@
             </div>
         </nav>
     </header>
-    <main class="main__page-body page__view-car lock-padding">
-        <div class="main__page-wrapper catalog-items__wrapper">
-            <div class="page-wrapper__view-auto">
-                <div class="view-auto__imgs">
-
+    <main class="main__page-body page-map lock-padding">
+        <div class="main__page-wrapper page__map-wrapper">
+            <h2 class="name-screen">
+                Сеть зарядок
+            </h2>    
+        </div>
+        <div class="map-wrapper">
+            <iframe class="map-item" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d90286.15860084056!2d39.528235430541834!3d52.578785206314485!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xdb0679d5f2c53013!2sShell!5e0!3m2!1sru!2sua!4v1619618804682!5m2!1sru!2sua" width="1920" height="785" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+        <div class="page-map__proposition-wrapper">
+            <div class="proposition-item">
+                <div class="proposition__img-wrapper">
+                    <img class="img" src="./img/station.jpg" alt="Station">
                 </div>
-                <div class="view-auto__features">
-                    <div class="description__title">2018 Tesla Model 3 Mid Range</div>
-                    <div class="features-names">
-                        <div class="features">
-                            <div class="features-name">Марка</div>
-                            <div class="features-description">Tesla</div>
+                <div class="proposition__form">
+                    <div class="form-title">Где открыть следующую станцию подзарядки?</div>
+                    <div class="form-subtitle">Есть идеи, напишите нам.</div>
+                    <form id="formProposition" class="content__description-form form-items">
+                        <input name="name" class="form-item popup__input item-input required" placeholder="Имя" type="text" autocomplete="off">
+                        <input name="phone" type="tel" class="form-item popup__input item-input required" placeholder="Телефон" autocomplete="off">
+                        <textarea name="text" class="form-item popup__input item-input item-textarea required" placeholder="Место для новой зарядной станции" autocomplete="off"></textarea>
+                        <div class="item-input-wrapper">
+                            <input name="accept" class="item-radio required" id="item-radio2" type="checkbox" >
+                            <label class="label-radio proposition-radio" for="item-radio2">Да, мне было бы удобно заряжаться в предложенном мной месте</label>
                         </div>
-                        <div class="features">
-                            <div class="features-name">Модель</div>
-                            <div class="features-description">Model 3 Mid Range</div>
+                        <div class="form-btn__wrapper">
+                            <button  type="submit" class="view-action action__sign-up form-btn">Отправить</button>
                         </div>
-                        <div class="features">
-                            <div class="features-name">Тип кузова</div>
-                            <div class="features-description">лифтбек</div>
-                        </div>
-                        <div class="features">
-                            <div class="features-name">Вид</div>
-                            <div class="features-description">Электромобиль</div>
-                        </div>
-                        <div class="features">
-                            <div class="features-name">Двигатель</div>
-                            <div class="features-description">-</div>
-                        </div>
-                        <div class="features">
-                            <div class="features-name">Мощность</div>
-                            <div class="features-description">258 л.с.</div>
-                        </div>
-                        <div class="features">
-                            <div class="features-name">Батарея</div>
-                            <div class="features-description">66 квт/ч</div>
-                        </div>
-                        <div class="features">
-                            <div class="features-name">Запас хода(NEDC/EPA/WLTP)</div>
-                            <div class="features-description">420 км.</div>
-                        </div>
-                        <div class="features">
-                            <div class="features-name">Время зарядки(220В/380В/DC)</div>
-                            <div class="features-description">9,5ч./--/--</div>
-                        </div>
-                        <div class="features">
-                            <div class="features-name">Разгон 0-100 км/ч</div>
-                            <div class="features-description">5,6 сек.</div>
-                        </div>
-                        <div class="features">
-                            <div class="features-name">Максимальная скорость</div>
-                            <div class="features-description">201 км/ч</div>
-                        </div>
-                    </div>
+                    </form>
+                    
                 </div>
-            </div>
-            <div class="page-wrapper__view-description">
-                <h3 class="view-description__title">
-                    Описание
-                </h3>
-                <div class="view-description__text">
-                    <div class="text-title">
-                        TESLA MODEL 3 Mid Range
-                    </div>
-                    <div class="text__sentence first-sentence">
-                        Автомобиль прибыл из Америки, Без пробега по РБ. Машина в отличном состоянии как внешне, внутри, так и технически. Оригинальный пробег всего 25000км.
-                    </div>
-                    <div class="text__sentence second-sentence">
-                        Очень динамичный и вместительный электромобиль. Разгон до 100км за 5.6сек. Конец 2018 года, на процессоре Intel. Запас хода в среднем 420км, зарядка от CHADEMO 1 час 30 минут, зарядка от сети 220 около 9.5часов. Ёмкость Батареи 66kВт. Максимальная скорость 200км\ч.
-                    </div>
-                    <div class="text__sentence third-sentence">
-                        Хорошая комплектация: кожаный салон, Подогревы сидений передних, климат контроль, бесключевой доступ, центральный замок, электро стекла и электро зеркала, складывания зеркал, датчик света и дождя, литые диски R19, порт быстрой зарядки CHADEMO, камера заднего вида, автопарковка, круиз контроль, заводская сигнализация, ABS и др. опции.
-                    </div>
-                </div>
-            </div>
-            <div class="page-wrapper__view-actions">
-                <a href="#popup__item-record" class="view-action  action__sign-up popup-link">
-                    Тест драйв
-                </a>
-                <a href="#popup__item-rent" class="view-action action__rent popup-link">
-                    Аренда электромобиля
-                </a>
             </div>
         </div>
         <div id="popup__item" class="popup__item">
@@ -178,90 +127,6 @@
                             <div class="item-input-wrapper">
                                 <input name="accept" class="item-radio __required" id="item-radio" type="checkbox" >
                                 <label class="label-radio" for="item-radio">Я принимаю пользовательское соглашение</label>
-                            </div>
-                            <div class="form-btn__wrapper">
-                                <button  type="submit" class="view-action action__sign-up  form-btn ">Отправить</button>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div id="popup__item-record" class="popup__item popup__item-record">
-            <div class="popup__item__body">
-                <div class="popup__item__content popup__item-record--content">
-                    <div class="content__img-wrapper">
-                        <img class="img" src="./img/comp.png" alt="Computer" >
-                    </div>
-                    <div class="content__description">
-                        <div class="content__description-title record-content__description-title">Запись на тест драйв</div>
-                        <form id="formRecord" class="content__description-form">
-                            <input name="name" class="form-item item-input popup__input _required" placeholder="Имя" type="text" autocomplete="off">
-                            <input name="phone" type="tel" class="form-item item-input popup__input _required" placeholder="Телефон" autocomplete="off">
-                            <div class="form__select-items">
-                                <label class="form__select-item">
-                                    Дата
-                                    <select class="form__select-item--data _required"  >
-                                        <option class="item--data__option" value="21.04.2021" selected>21.04.2021</option>
-                                        <option class="item--data__option" value="21.04.2021">21.04.2021</option>
-                                        <option class="item--data__option" value="21.04.2021">21.04.2021</option>
-                                        <option class="item--data__option" value="21.04.2021">21.04.2021</option>
-                                        <option class="item--data__option" value="21.04.2021">21.04.2021</option>
-                                        <option class="item--data__option" value="21.04.2021">21.04.2021</option>
-                                        <option class="item--data__option" value="21.04.2021">21.04.2021</option>
-                                        <option class="item--data__option" value="21.04.2021">21.04.2021</option>
-                                    </select>
-                                </label>
-                                <label class="form__select-item">
-                                    Время
-                                    <select class="form__select-item--time _required">
-                                        <option value="10:00" selected>10:00</option>
-                                        <option value="10:00">10:00</option>
-                                        <option value="11:00">11:00</option>
-                                        <option value="12:00">12:00</option>
-                                        <option value="13:00">13:00</option>
-                                        <option value="14:00">14:00</option>
-                                        <option value="15:00">15:00</option>
-                                        <option value="16:00">16:00</option>
-                                    </select>
-                                </label>
-                            </div>
-                            <div class="item-input-wrapper">
-                                <input name="accept" class="item-radio _required" id="item-radio1" type="checkbox" >
-                                <label class="label-radio" for="item-radio1">Я принимаю пользовательское соглашение</label>
-                            </div>
-                            <div class="form-btn__wrapper">
-                                <button  type="submit" class="view-action action__sign-up  form-btn ">Отправить</button>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div id="popup__item-rent" class="popup__item popup__item-rent">
-            <div class="popup__item__body">
-                <div class="popup__item__content popup__item-rent--content">
-                    <div class="content__img-wrapper">
-                        <img class="img img-rent" src="./img/rent.png" alt="Rent" >
-                    </div>
-                    <div class="content__description">
-                        <div class="content__description-title rent-content__description-title">Аренда авто</div>
-                        <form id="formRent" class="content__description-form">
-                            <input name="name" class="form-item item-input popup__input _req" placeholder="ФИО" type="text" autocomplete="off">
-                            <input name="phone" type="tel" class="form-item item-input popup__input _req" placeholder="Телефон" autocomplete="off">
-                            <div class="form__select-items">
-                                <label class="form__select-item _req">
-                                    Дата аренды
-                                    <input class="form__select-item--data input__item-data" value="" type="date" placeholder="21.04.2021">
-                                </label>
-                                <label class="form__select-item _req">
-                                    Время аренды
-                                    <input class="form__select-item--time input__item-time" value="" type="time" placeholder="11:00">
-                                </label>
-                            </div>
-                            <div class="item-input-wrapper">
-                                <input name="accept" class="item-radio _req" id="item-radio4" type="checkbox" >
-                                <label class="label-radio" for="item-radio4">Я принимаю пользовательское соглашение</label>
                             </div>
                             <div class="form-btn__wrapper">
                                 <button  type="submit" class="view-action action__sign-up  form-btn ">Отправить</button>

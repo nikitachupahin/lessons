@@ -6,27 +6,26 @@ export default class CatalogPage {
         this.prevBtn = document.querySelector('.arrow-1__action');
         this.nextBtn = document.querySelector('.arrow-2__action');
         this.containerCatalogCards = document.querySelector('.catalog__cards-wrapper--items');
-        console.log(this.nextBtn)
-        
-        
+        this.dotsItems = document.querySelectorAll('.docs__item');
+        this.arrow = document.querySelectorAll('.arrow');
+        this.dotsActions = document.querySelectorAll('.docs__item-action')
+        this.pageNumber = 0;
+        this.countCards = 15;
         this.launchCatalogSlider();
     }
     createAndRenderCardsOfCatalog() {
-        
-        this.containerCatalogCards.innerHTML =  CatalogPageData.map( ({ img, name, features, button, id, action },slideIndex) => {
+        // (this.pageNumber - 1 ) * this.countCards
+        this.containerCatalogCards.innerHTML =  CatalogPageData
+        .filter( (el ,index) => {
+            return index >= (this.pageNumber ) * this.countCards &&  index < ((this.pageNumber ) * this.countCards) + 15;
+        })
+        .map( ({ img, name, features, button, id, action }) => {
             
-        
-            let position = "slider__item-next";
-                if( slideIndex === 0) {
-                    position = "slider__item-active";
-                }
-                if (slideIndex === CatalogPageData.length -1) {
-                    position = "slider__item-last";
-                }
+           
             return `
                 
-                <div class="catalog__cards-items ${position} "> 
-                <div id="${id}" class="catalog-item item__cards-cars">
+                <div class="catalog__cards-items "> 
+                <div onclick="location.href='viewAutoPage.html';" id="${id}" class="catalog-item item__cards-cars">
                 <div class="catalog__img-wrapper">
                     <img class="item-img" src="${img}" alt="Car">
                 </div>
@@ -83,7 +82,7 @@ export default class CatalogPage {
                 </div>
                 </div>
                 <div class="catalog-item__btn">
-                    <a href="${action}" class="view-action action__sign-up action__detailed">${button}</a>
+                    <a   href="${action}" class="view-action action__sign-up action__detailed">${button}</a>
                 </div>
                 </div>
                 
@@ -92,41 +91,59 @@ export default class CatalogPage {
                 
                 } ).join('');
             }
-
-        // nextBtn.addEventListener('click', () => {
-        //     this.startCatalogSlider();
-        // });
-        // prevBtn.addEventListener('click', () => {
-        //     this.startCatalogSlider();
-        // });
-        startCatalogSlider(type) {
-                const active = document.querySelector('.slider__item-active');
-                const last = document.querySelector('.slider__item-last');
-                let next = active.nextElementSibling;
-                if (!next) {
-                    next = this.containerCatalogCards.firstElementChild;  
-                }
-                active.classList.remove(['slider__item-active']);
-                last.classList.remove(['slider__item-last']);
-                next.classList.remove(['slider__item-next']);
-            
-                active.classList.add('slider__item-last');
-                last.classList.add('slider__item-next');
-                next.classList.add('slider__item-active');
-                    };
         clickBtns() {
             this.nextBtn.addEventListener('click', () => {
-                this.createAndRenderCardsOfCatalog();
-                this.startCatalogSlider();
+            
+             this.pageNumber++;
+             this.containerCatalogCards.innerHTML = "";
+             this.createAndRenderCardsOfCatalog();
+             this.activeDot(this.pageNumber)
+            
             })
             this.prevBtn.addEventListener('click', () => {
+                this.pageNumber--;
+                this.containerCatalogCards.innerHTML = "";
                 this.createAndRenderCardsOfCatalog();
-                this.startCatalogSlider('prev');
-            })   
+                this.activeDot(this.pageNumber)
+            }) 
+              
+        }
+        
+        activeDot(n) {
+            for( let dot of this.dotsItems) {
+                dot.classList.remove('docs__item-active');
+                dot.classList.add('docs__item-next')
+            }
+            for( let dotAction of this.dotsActions) {
+                dotAction.classList.remove('docs__item-active');
+            }
+            for (let mainArrow of this.arrow) {
+                mainArrow.classList.remove('arrow');
+            }
+            this.dotsActions[n].classList.add('docs__item-active')
+            this.dotsItems[n].classList.remove('docs__item-far')
+            this.dotsItems[n].classList.remove('docs__item-next')
+            this.dotsItems[n].classList.add('docs__item-active')
+
+            if (this.pageNumber === 2 ) {
+                this.arrow[1].classList.add('arrow__no-click')
+            } else {
+                // this.arrow[n].classList.remove('arrow__no-click')
+            }
+            if(this.pageNumber === 0) {
+                this.arrow[0].classList.add('arrow__no-click')
+            }  else {
+                // this.arrow[n].classList.remove('arrow__no-click')
+            }
+            if(this.pageNumber === 1) {
+                this.arrow[0].classList.remove('arrow__no-click')
+                this.arrow[1].classList.remove('arrow__no-click')
+            }
+            
         }     
         launchCatalogSlider() {
+                
                     this.createAndRenderCardsOfCatalog();
-                    this.startCatalogSlider();
                     this.clickBtns();
         } 
        
